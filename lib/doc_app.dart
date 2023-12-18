@@ -19,7 +19,7 @@ class DoctorApp extends StatelessWidget {
         return MaterialApp(
           debugShowCheckedModeBanner: false,
           onGenerateRoute: (settings) => AppRouter.generateRouter(settings),
-          initialRoute: Routes.onBoardingScreen,
+          initialRoute: Routes.spashScreen,
         );
       },
     );

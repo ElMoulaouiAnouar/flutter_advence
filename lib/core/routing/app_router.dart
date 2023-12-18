@@ -3,10 +3,13 @@ import 'package:flutter/material.dart';
 import 'package:flutter_advenced_cours_app/core/routing/routes.dart';
 import 'package:flutter_advenced_cours_app/features/auth/views/login_screen.dart';
 import 'package:flutter_advenced_cours_app/features/onboarding/onboarding_screen.dart';
+import 'package:flutter_advenced_cours_app/features/splash/splash_screen.dart';
 
 class AppRouter {
   static Route generateRouter(RouteSettings routeSettings) {
     switch (routeSettings.name) {
+      case Routes.spashScreen:
+        return MaterialPageRoute(builder: (_) => const SpalshScreen());
       case Routes.onBoardingScreen:
         return MaterialPageRoute(builder: (_) => const OnBoardingScreen());
       case Routes.loginScreen:

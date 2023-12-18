@@ -5,5 +5,9 @@ extension Navigation on BuildContext {
     return Navigator.of(this).pushNamed(name, arguments: arguments);
   }
 
+  Future<dynamic> pushReplacementNamed(String name, {Object? arguments}) {
+    return Navigator.of(this).pushReplacementNamed(name, arguments: arguments);
+  }
+
   void pop() => Navigator.of(this).pop();
 }
